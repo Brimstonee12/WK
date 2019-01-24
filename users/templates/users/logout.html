@@ -1,0 +1,10 @@
+{% extends "main/index.html" %}
+{% load static %}
+{% block content %}
+    <h2>Wylogowałeś się</h2>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a href="{% url 'home-poczta' %}">Zaloguj się ponownie</a>
+        </small>
+    </div>
+{% endblock content %}

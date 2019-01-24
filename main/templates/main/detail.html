@@ -1,0 +1,62 @@
+{% extends 'main/index.html' %}
+
+{% block content %}
+
+
+
+<div class="containerx"
+      <div class="card">
+          <img class="card-img-top" src="{{news_model_total.image.url}}" alt="Card image cap" width="700" height="450">
+          <div class=".col-sm-">
+            <h5 class="lead">{{news_model_total.title|title}}</h5>
+            <p class="lead">{{news_model_total.content}}</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">{{news_model_total.date}}</small>
+          </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+ <br>
+ {% if user.is_authenticated %}
+<form method="POST" class="post-form">{% csrf_token %}
+{{ form.as_p }}
+<button type="submit" class="save btn btn-default">Send</button>
+</form>
+</div>
+<div class=" row post_spacing background_design1 ">
+<hr>
+{% endif %}
+
+
+            <div class="container-com">
+                    {% for comment in news_model_total.comments.all %}
+                        <div class="container2-com">
+                            <h1 class="comment-aut">{{ comment.autor }}</h1>
+                            <p class="comment-text">{{ comment.tekst }}</p>
+                            <hr>
+                            <h4 class="comment-date">{{ comment.created_date }}</h4>
+                        </div>
+                        <br>
+                    {% empty %}
+                    {% if user.is_authenticated %}
+                        <p>Pod tym postem nie ma jeszcze komentarzy,badz pierwszym ktory je doda! </p>
+                        {% else %}
+                        <p>Pod tym postem nie ma jeszcze komentarzy,badz pierwszym ktory je doda! <a
+                          href="{% url 'home-poczta' %}" class="text-info">Zaloguj się</a></p>
+                        {%endif%}
+                    {% endfor %}
+  </div>
+
+
+
+
+{% endblock %}
