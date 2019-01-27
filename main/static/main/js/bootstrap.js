@@ -4,6 +4,29 @@
  * Licensed under the MIT license
  */
 
+ $(document).ready(function(){
+ $(".btn").click(function(){
+   $(this).button('loading').delay(1000).queue(function(){
+     $(this).button('somestringvalue');
+     $(this).dequeue();
+   });
+ });
+ });
+
+
+ $('.nav-tabs a').click(function(){
+ $(this).tab('show');
+ })
+
+ $('.nav-tabs a[href="#home"]').tab('show')
+
+ $('.nav-tabs a:first').tab('show')
+
+ $('.nav-tabs a:last').tab('show')
+
+ $('.nav-tabs li:eq(3) a').tab('show')
+
+ 
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
