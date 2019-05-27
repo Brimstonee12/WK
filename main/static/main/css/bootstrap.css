@@ -128,6 +128,12 @@ sub {
 img {
   border: 0;
 }
+
+.img-car < .container {
+  width:100%;
+  height:100%;
+  background-size:contain;
+}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -1239,10 +1245,11 @@ img {
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousel-inner > .item > a > img {                                                 /* #DID CHANGES */
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 700px;
+  height: 450px;
+  overflow: hidden;
 }
 
 

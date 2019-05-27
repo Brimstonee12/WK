@@ -6,11 +6,11 @@ class News_model_total(models.Model):
     date = models.DateTimeField()
     image = models.ImageField(upload_to='images')
     CATEGORIES = (
-        ('N', 'Nowosc'),
-        ('P', 'Polityka'),
+        ('N', 'News'),
+        ('P', 'Politics'),
         ('S', 'Sport'),
-        ('B', 'Biznes'),
-        ('I', 'Inne'),
+        ('B', 'Business'),
+        ('I', 'Other'),
     )
     category = models.CharField(max_length=1, choices=CATEGORIES ,default="N")
 

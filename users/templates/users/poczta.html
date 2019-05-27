@@ -21,22 +21,23 @@
 {% if user.is_authenticated %}
 
 <div class="sidenav">
-  <a href="#">Odebrane</a>
-  <a href="#">Kosz</a>
-  <a href="#">Robocze</a>
+  <a href="#">Received</a>
+  <a href="#">Trash</a>
+  <a href="#">Working Messages</a>
   <a href="#">Spam</a>
 </div>
 
 <div class="container">
-  <h2>Skrzynka odbiorcza</h2>
+  <h2>InBox</h2>
   <hr>
   <br>
   <table class="table table-condensed">
     <thead>
       <tr>
-        <th>od:</th>
-        <th>temat:</th>
-        <th>odebrano:</th>
+        <th>from:</th>
+        <th>topic:</th>
+        <th>
+received:</th>
       </tr>
     </thead>
     <tbody>
@@ -82,10 +83,10 @@
                         </div> -->
                         <div class="form-group">
                             <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                            <button type="submit" class="btn btn-info btn-md" data-somestringvalue-text="Wypełnij to pole" autocomplete="off">Zaloguj się</button>
+                            <button type="submit" class="btn btn-info btn-md" data-somestringvalue-text="Fill this field" autocomplete="off">Log in</button>
                         </div>
                         <div id="register-link" class="text-right">
-                            <a href="{% url 'register-user' %}" class="text-info">Zarejestruj sie</a>
+                            <a href="{% url 'register-user' %}" class="text-info">Register now</a>
                         </div>
                     </form>
                 </div>

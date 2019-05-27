@@ -48,10 +48,10 @@
                         <br>
                     {% empty %}
                     {% if user.is_authenticated %}
-                        <p>Pod tym postem nie ma jeszcze komentarzy,badz pierwszym ktory je doda! </p>
+                        <p>There are no comments here yet, be the first who will add them! </p>
                         {% else %}
-                        <p>Pod tym postem nie ma jeszcze komentarzy,badz pierwszym ktory je doda! <a
-                          href="{% url 'home-poczta' %}" class="text-info">Zaloguj się</a></p>
+                        <p>There are no comments here yet, be the first who will add them <a
+                          href="{% url 'home-poczta' %}" class="text-info">Log in</a></p>
                         {%endif%}
                     {% endfor %}
   </div>

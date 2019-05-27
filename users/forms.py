@@ -5,20 +5,13 @@ from django.contrib.auth.models import User
 
 
 class SignUpForm(UserCreationForm):
-    email =  forms.EmailField(max_length=254, help_text='Required. Inform a valid email address.')
+    email =  forms.EmailField(max_length=254)
+    username =  forms.CharField(max_length=30, help_text='May contain a max of 20 characters', label='Username')
+    password1 = forms.CharField(widget=forms.PasswordInput(),label='Password',help_text='May contain a min of 8 characters')
+    password2 = forms.CharField(widget=forms.PasswordInput(),label='Retype Password',help_text='')
 
 
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'password1' )
-
-        widgets = {
-            'username': forms.TextInput(attrs={'class': 'form-control', 'placeholder': ''}),
-            'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': ''}),
-            'password1': forms.PasswordInput(attrs={ 'class': 'form-control','placeholder': 'Password'}),
-            'password2': forms.PasswordInput(attrs={ 'class': 'form-control','placeholder': 'Password Again'}),
-        }
-
-
-# 'class': 'form-control',
+        fields = ('username', 'email', 'password1','password2' )
