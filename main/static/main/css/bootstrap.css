@@ -1789,7 +1789,7 @@ pre code {
                                                     /* FLEX BOX  */
   @media(min-width:968px){
 
-    .container-t1{
+    .container-t1 {
       display:flex;
       justify-content:center;
       flex-wrap: wrap;
@@ -1824,6 +1824,7 @@ pre code {
   .container {
     width: 970px;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -1842,7 +1843,7 @@ pre code {
 
                                                       /* HOME PAGE */
 
-.container2 {
+.container2  {
   position: relative;
   text-align: center;
   color: white;
@@ -1865,63 +1866,44 @@ pre code {
 
 .centered1  {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: 4px;
+  left: 10%;
+  right: 10%;
   background-color: none;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+
 
 }
 
 .aboxx {
   color:white;
+  font-size:25px;
+  line-height: 25px;
 }
 
+@media (min-width:1200px){
+ .category-t1{
+  width:1120px;
 
+}
+}
+
+                                                                                  /* #DID CHANGES */
 .category-t1 {
-  width: 1120px;
   height:45px;
   box-sizing: border-box;
   background-color: rgb(237, 28, 36);
-  margin-left:385px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 .category-t1 div{
   text-align:center;
 }
 
-.category-t2 {
-  width: 1120px;
-  height:45px;
-  box-sizing: border-box;
-  background-color: rgb(70, 165, 68);
-  margin-left:385px;
-}
-.category-t2 div{
-  text-align:center;
-}
 
-.category-t3 {
-  width: 1120px;
-  height:45px;
-  box-sizing: border-box;
-  background-color: rgb(0, 97, 206);
-  margin-left:385px;
-}
-.category-t3 div{
-  text-align:center;
-}
-
-.category-t4 {
-  width: 1120px;
-  height:45px;
-  box-sizing: border-box;
-  background-color: #834b90;
-  margin-left:385px;
-}
-.category-t4 div{
-  text-align:center;
-}
 
 .h4cat {
   color:white;
@@ -1945,10 +1927,12 @@ pre code {
 .container-fluid {
   margin:100;
   border:red;
- padding-right: 15px;
-  padding-left: 500px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  display: inline-block;
+  list-style-type: none;
 }
 
 .my-con {
@@ -5347,6 +5331,7 @@ a.badge:focus {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 6px;
+
 }
 .jumbotron .container {
   max-width: 100%;

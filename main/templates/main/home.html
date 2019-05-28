@@ -65,65 +65,64 @@
 <div class="container-t1">
 {% for post in posts %}
 {% if post.category == "N" %}
-  <div class="container2">
-    <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
-    <div class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
-  </div>
+<div class="container2">
+  <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
+  <div onclick="location.href='{% url 'post-detail' post.id %}';" style="cursor: pointer;" class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
+</div>
   {%else%}
-
   {%endif%}
 {% endfor %}
   </div>
 
 
 
-<div class="category-t1"><h4 class="h4cat">Politics</h4></div>
+<div class="category-t1" style="background-color:rgb(237, 28, 36)"><h4 class="h4cat">Politics</h4></div>
 <div class="container-t1">
 {% for post in posts %}
 {% if post.category == "P" %}
-  <div class="container2">
-    <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
-    <div class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
-  </div>
+<div class="container2">
+  <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
+  <div onclick="location.href='{% url 'post-detail' post.id %}';" style="cursor: pointer;" class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
+</div>
   {%else%}
   {%endif%}
 {% endfor %}
   </div>
 
-<div class="category-t2"><h4 class="h4cat">Sport</h4></div>
+<div class="category-t1" style="background-color:rgb(70, 165, 68)"><h4 class="h4cat">Sport</h4></div>
 <div class="container-t1">
 {% for post in posts %}
 {% if post.category == "S" %}
-  <div class="container2">
-    <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
-    <div class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
-  </div>
+<div class="container2">
+  <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
+  <div onclick="location.href='{% url 'post-detail' post.id %}';" style="cursor: pointer;" class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
+</div>
   {%else%}
   {%endif%}
 {% endfor %}
   </div>
 
-<div class="category-t3"><h4 class="h4cat">
+<div class="category-t1" style="background-color:rgb(0, 97, 206)"><h4 class="h4cat">
 Business</h4></div>
 <div class="container-t1">
 {% for post in posts %}
 {% if post.category == "B" %}
-  <div class="container2">
-    <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
-    <div class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
-  </div>
+<div class="container2">
+  <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
+  <div onclick="location.href='{% url 'post-detail' post.id %}';" style="cursor: pointer;" class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
+</div>
   {%else%}
   {%endif%}
 {% endfor %}
 </div>
 
-<div class="category-t4"><h4 class="h4cat">Other</h4></div>
+<div class="category-t1" style="background-color:#834b90"><h4 class="h4cat">Other</h4></div>
 <div class="container-t1">
 {% for post in posts %}
 {% if post.category == "I" %}
   <div class="container2">
     <a  href="{% url 'post-detail' post.id %}"><img src="{{post.image.url}}" alt="Snow" width="350" height="250" class="img-rounded"></a>
-    <div class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
+    <div onclick="location.href='{% url 'post-detail' post.id %}';" style="cursor: pointer;" class="centered1"><a class="aboxx" href="{% url 'post-detail' post.id %}">{{post.title}}</a></div>
   </div>
   {%else%}
   {%endif%}
