@@ -4,10 +4,10 @@
 
 
 
-<div class="containerx"
+<div class="containerx">
       <div class="card">
-          <img class="card-img-top" src="{{news_model_total.image.url}}" alt="Card image cap" width="700" height="450">
-          <div class=".col-sm-">
+          <img class="card-img-top" src="{{news_model_total.image.url}}" alt="Card image cap" width="800px" height="600px">
+          <div class="col-sm">
             <h5 class="lead">{{news_model_total.title|title}}</h5>
             <p class="lead">{{news_model_total.content}}</p>
           </div>
@@ -15,23 +15,23 @@
             <small class="text-muted">{{news_model_total.date}}</small>
           </div>
         </div>
-        </div>
+</div>
 
 
-
-
+<!-- card-img-top -->
 
 
 
 
 
  <br>
+
  {% if user.is_authenticated %}
 <form method="POST" class="post-form">{% csrf_token %}
 {{ form.as_p }}
 <button type="submit" class="save btn btn-default">Send</button>
 </form>
-</div>
+
 <div class=" row post_spacing background_design1 ">
 <hr>
 {% endif %}
@@ -55,8 +55,6 @@
                         {%endif%}
                     {% endfor %}
   </div>
-
-
 
 
 {% endblock %}

@@ -1629,6 +1629,20 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (min-width: 1200px) {
+  .containerx {
+    width: 700px;
+  }
+}
+
+.containerx {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
